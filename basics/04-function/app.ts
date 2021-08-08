@@ -17,3 +17,18 @@ function printResultWithEmptyReturn_undefinedValueIsImportantForBusinessLogic(nu
 }
 
 printResult(add(5, 12));
+
+let fnRef01: Function;
+// fnRef01 = 5; // error
+
+let fnRef02: Function;
+// fnRef02 = add;
+fnRef02 = printResult; // wrong function by mistake
+console.log(fnRef02(8, 8)); // not expected result
+
+let combineValues: (a: number, b: number) => number;
+combineValues = add;
+// combineValues = printResult; // error
+// combineValues = 5; // error
+console.log(combineValues(8, 8));
+
