@@ -43,3 +43,13 @@ function addAndHandle(
 }
   
 addAndHandle(10, 20, result => console.log(result));
+
+
+// never return type
+function throwErrorReturnsNever(message: string, code: number): never {
+  throw { message: message, errorCode: code };
+}
+
+function infiniteLoopReturnsNever(message: string, code: number): never {
+  while (true) {}
+}
