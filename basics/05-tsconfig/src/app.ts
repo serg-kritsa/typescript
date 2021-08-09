@@ -14,5 +14,6 @@ function clickHandler(message: string) {
 }
 // a comment
 if (button) { // way to pass strictNullChecks
-  button.addEventListener('click', clickHandler.bind(null, "You're welcome!"));
+  button.addEventListener('click', clickHandler.bind(null));
+  button.addEventListener('click', clickHandler.bind(null, 1));
 }
