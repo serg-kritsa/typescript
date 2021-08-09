@@ -25,6 +25,11 @@ tsc --init
 compilerOptions.target: es5 to support execution in old browsers 
 "lib": [ "DOM", "DOM.Iterable", "ES6", "ScriptHost" ],     default libs if not specified
 "sourceMap": true,      useful to simplify debugging
+"outDir": "./dist",     folder for compiled files      
+"rootDir": "./src",     folder w/ ts files to be compiled
+"removeComments": true, useful to make output smaller        
+"noEmit": true,         don't generate js files. useful for finding errors
+"noEmitOnError": true,  no files will be emitted if there is error
 
 ## run a lite server
 * npm i lite-server -D
