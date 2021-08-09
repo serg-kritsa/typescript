@@ -4,7 +4,8 @@
   "description": "Understanding TypeScript Course Setup",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "tsc",
+    "tsw": "tsc --watch",
     "start": "lite-server"
   },
   "keywords": [
@@ -14,6 +15,7 @@
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "typescript": "^4.3.5"
   }
 }

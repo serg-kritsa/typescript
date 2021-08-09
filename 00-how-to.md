@@ -35,3 +35,14 @@ compilerOptions.target: es5 to support execution in old browsers
 * npm i lite-server -D
 * add line to package.json `"scripts": { "start": "lite-server" },`
 * npm run start
+
+## debug the ts app
+install `Debugger for Microsoft Edge` extention
+    edit launch.json file
+npm i
+    enable sourceMap in tsconfig.json using `"sourceMap": true,`    
+    npm run ts
+    npm run start
+set breakpoint in ts file
+press F5 to start
+see console messages in `DEBUG CONSOLE` tab not `TERMINAL`
