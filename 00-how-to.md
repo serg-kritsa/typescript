@@ -19,6 +19,13 @@ tsc --init
 "*.dev.ts" would be excluded with specified ending
 "**/*.dev.ts" would be excluded with specified ending anywhere
 
+## Compilation options
+[https://www.typescriptlang.org/docs/handbook/tsconfig-json.html]
+[https://www.typescriptlang.org/docs/handbook/compiler-options.html]
+compilerOptions.target: es5 to support execution in old browsers 
+"lib": [ "DOM", "DOM.Iterable", "ES6", "ScriptHost" ],     default libs if not specified
+"sourceMap": true,      useful to simplify debugging
+
 ## run a lite server
 * npm i lite-server -D
 * add line to package.json `"scripts": { "start": "lite-server" },`
