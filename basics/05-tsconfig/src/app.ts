@@ -12,8 +12,7 @@ function clickHandler(message: string) {
   // let userName = 'Max';
   console.log('Clicked! ' + message);
 }
-button.addEventListener('click', clickHandler.bind(null, "You're welcome!"));
 // a comment
-if (button) {
+if (button) { // way to pass strictNullChecks
   button.addEventListener('click', clickHandler.bind(null, "You're welcome!"));
 }
