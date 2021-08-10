@@ -20,3 +20,16 @@ const sum = (...numbers: number[]) => {
   
   const addedNumbers = sum(5, 10, 2, 3.7);
   console.log(addedNumbers);
+
+// destructuring
+//  array
+const [hobby1, hobby2, ...remainingHobbies] = hobbies;
+console.log(hobbies, hobby1, hobby2);
+
+//  object
+const credentials = {
+  login: 'Max',
+  password: 'a'
+};
+const { login: user, password } = credentials;
+console.log(user, password, credentials);
