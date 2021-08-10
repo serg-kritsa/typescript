@@ -46,3 +46,7 @@ npm i
 set breakpoint in ts file
 press F5 to start
 see console messages in `DEBUG CONSOLE` tab not `TERMINAL`
+
+## know es6 support in browsers
+[https://kangax.github.io/compat-table/es6/]
+
