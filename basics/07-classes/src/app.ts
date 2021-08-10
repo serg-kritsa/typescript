@@ -42,8 +42,18 @@ console.log(it);
 
 
 class AccountingDepartment extends Department {
+  private lastReport: string;
+
+  set mostRecentReport(value: string) {
+    if (!value) {
+      throw new Error('Please pass in a valid value!');
+    }
+    this.addReport(value);
+  }
+
   constructor(id: string, private reports: string[]) {
     super(id, 'Accounting');
+    this.lastReport = reports[0];
   }
 
   addEmployee(name: string) {
@@ -60,6 +70,7 @@ class AccountingDepartment extends Department {
   }
 }
 const accounting = new AccountingDepartment('d2', []);
+accounting.mostRecentReport = 'Year End Report';
 accounting.addReport('Something went wrong...');
 accounting.addEmployee('Max');
 accounting.addEmployee('Manu');
