@@ -25,3 +25,10 @@ const fn2 = (paramWithUnion: number | string) => console.log(paramWithUnion); //
 // const fn3: Function = paramWithoutType => console.log(paramWithoutType); // error // type should be added
 let fn4: (a: number | string) => void; // union in definition
 fn4 = output => console.log(output);
+
+// function w/ default param value
+const fnWithDefaultValue = (a: number, b: number = 1) => a + b;
+fnWithDefaultValue(5); // 6
+const fnWithDefaultValueShouldBeInTheEnd = (a: number = 1, b: number) => a + b;
+// fnWithDefaultValueShouldBeInTheEnd(5); // error
+
