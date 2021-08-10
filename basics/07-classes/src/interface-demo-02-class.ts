@@ -1,5 +1,6 @@
 interface Named {
   readonly name: string;
+  optionalPropertyWithQuestionMark?: string;
 }
 
 interface Greetable extends Named {
