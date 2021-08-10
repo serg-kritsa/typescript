@@ -23,16 +23,22 @@ class Department {
   }
 }
 
-const accounting = new Department('d1', 'Accounting');
+class ITDepartment extends Department {
+  admins: string[];
+  constructor(id: string, admins: string[]) {
+    super(id, 'IT');
+    this.admins = admins;
+  }
+}
 
-accounting.addEmployee('Max');
-accounting.addEmployee('Manu');
-
-// accounting.employees[2] = 'Anna'; // error for private field
-
-accounting.describe();
-accounting.name = 'NEW NAME';
-accounting.printEmployeeInformation();
+const it = new ITDepartment('d1', ['Max']);
+it.addEmployee('Max');
+it.addEmployee('Manu');
+// it.employees[2] = 'Anna'; // private error
+it.describe();
+it.name = 'NEW NAME';
+it.printEmployeeInformation();
+console.log(it);
 
 // const accountingCopy00 = { describe: accounting.describe };
 // // accountingCopy00.describe(); // error
