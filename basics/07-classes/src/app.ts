@@ -40,6 +40,24 @@ it.name = 'NEW NAME';
 it.printEmployeeInformation();
 console.log(it);
 
+
+class AccountingDepartment extends Department {
+  constructor(id: string, private reports: string[]) {
+    super(id, 'Accounting');
+  }
+
+  addReport(text: string) {
+    this.reports.push(text);
+  }
+
+  printReports() {
+    console.log(this.reports);
+  }
+}
+const accounting = new AccountingDepartment('d2', []);
+accounting.addReport('Something went wrong...');
+accounting.printReports();
+
 // const accountingCopy00 = { describe: accounting.describe };
 // // accountingCopy00.describe(); // error
 // const accountingCopy = { name: 'DUMMY', describe: accounting.describe };
