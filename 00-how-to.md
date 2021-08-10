@@ -57,3 +57,5 @@ see console messages in `DEBUG CONSOLE` tab not `TERMINAL`
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields]
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain]
 
+## use an interface
+interface will not appear in compiled js and is only needed for development.

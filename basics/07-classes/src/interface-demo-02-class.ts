@@ -4,7 +4,7 @@ interface Named {
 }
 
 interface Greetable extends Named {
-  greet(phrase: string): void;
+  greet(phrase?: string): void;
 }
 
 class Person implements Greetable {
