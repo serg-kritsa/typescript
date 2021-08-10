@@ -1,5 +1,5 @@
 interface Greetable {
-  name: string;
+  readonly name: string;
   
   greet(phrase: string): void;
 }
@@ -17,6 +17,8 @@ class Person implements Greetable {
   }
 }
 
-let user2 = new Person('Max');
+let user2: Greetable = new Person('Max');
+
+// user2.name = 'Manu'; // readonly error
 
 console.log(user2);
