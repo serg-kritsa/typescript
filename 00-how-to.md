@@ -59,3 +59,6 @@ see console messages in `DEBUG CONSOLE` tab not `TERMINAL`
 
 ## use an interface
 interface will not appear in compiled js and is only needed for development.
+
+## enable decorator in tsconfig
+,"experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
