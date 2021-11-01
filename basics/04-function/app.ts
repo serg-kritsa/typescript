@@ -1,3 +1,8 @@
+function ignoring_not_used_2nd_param_in_ts(n1: number, _: number) {
+  // return n1 + n2;
+  return n1;
+}
+
 function add(n1: number, n2: number) {
   return n1 + n2;
 }
