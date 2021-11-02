@@ -70,3 +70,8 @@ interface will not appear in compiled js and is only needed for development.
 ## google geocoding api
 [https://developers.google.com/maps/documentation/geocoding/start?hl=ru]
 [https://developers.google.com/maps/documentation/javascript/overview?hl=ru]
+
+## NodeJS & TS
+(1st terminal) tsc -w
+(2nd terminal) npm start
+
