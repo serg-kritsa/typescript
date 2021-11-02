@@ -1,3 +1,4 @@
+npm i typescript -g
 ## compile ts file
 cd ./basics/00-compilation/
 npm i
@@ -62,3 +63,6 @@ interface will not appear in compiled js and is only needed for development.
 
 ## enable decorator in tsconfig
 ,"experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
+
+## HTML Drag and Drop API Documentation on MDN 
+[https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API](HTML Drag and Drop API)
