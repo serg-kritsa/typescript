@@ -66,3 +66,6 @@ interface will not appear in compiled js and is only needed for development.
 
 ## HTML Drag and Drop API Documentation on MDN 
 [https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API](HTML Drag and Drop API)
+
+## google geocoding api
+[https://developers.google.com/maps/documentation/geocoding/start?hl=ru]
