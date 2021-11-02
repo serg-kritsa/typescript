@@ -75,3 +75,5 @@ interface will not appear in compiled js and is only needed for development.
 (1st terminal) tsc -w
 (2nd terminal) npm start
 
+### CRUD 
+Routes could be tested in Postman 
